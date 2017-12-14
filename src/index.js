@@ -161,7 +161,7 @@ export default class EZModal extends Component {
               <Icon name="warning sign" />
               <Message.Content>
                 <Message.Header>{activeErrorHeader || 'Oops, something went wrong'}</Message.Header>
-                {activeErrorText}
+                {activeErrorText.toString()}
               </Message.Content>
             </Message>
           }

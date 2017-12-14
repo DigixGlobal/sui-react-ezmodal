@@ -1,6 +1,6 @@
 {
   "name": "@digix/sui-react-ezmodal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "EASY Semantic UI React Modals forked from sui-react-ezmodal",
   "main": "lib/index.js",
   "license": "MIT",

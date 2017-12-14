@@ -1,8 +1,7 @@
 {
-  "name": "sui-react-ezmodal",
-  "version": "0.1.11",
-  "description": "EASY Semantic UI React Modals",
-  "author": "Chris Hitchcott <hitchcott@gmail.com> (http://hitchcott.com)",
+  "name": "@digix/sui-react-ezmodal",
+  "version": "0.0.1",
+  "description": "EASY Semantic UI React Modals forked from sui-react-ezmodal",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {

@@ -15,6 +15,11 @@ export default class EZModal extends Component {
     this.handleSetLoading = this.handleSetLoading.bind(this);
     this.handleHide = this.handleHide.bind(this);
   }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.reOpen && this.props.reOpen !== nextProps.reOpen) {
+      this.setState({ show: true }); // open modal
+    }
+  }
   // TODO REMOVE THIS HACK
   // https://github.com/Semantic-Org/Semantic-UI-React/issues/1157
   componentWillUpdate() {
@@ -97,7 +102,7 @@ export default class EZModal extends Component {
       closeButtonText, submitButtonText,
       disableHiddenSubmitButton,
       /* eslint-disable no-unused-vars */
-      handleSubmit, loading, error, errorHeader, initiallyOpen, onClose, // plucked so we can pass otherProps
+      handleSubmit, loading, error, errorHeader, initiallyOpen, onClose, reOpen, // plucked so we can pass otherProps
       /* eslint-enable no-unused-vars */
       ...otherProps
     } = this.props;
@@ -206,6 +211,7 @@ EZModal.propTypes = {
   data: PropTypes.object,
   error: PropTypes.any,
   initiallyOpen: PropTypes.bool,
+  reOpen: PropTypes.bool,
   errorHeader: PropTypes.string,
   onClose: PropTypes.func,
   onReset: PropTypes.func,

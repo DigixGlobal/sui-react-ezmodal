@@ -17,7 +17,7 @@ export default class EZModal extends Component {
   }
   componentWillReceiveProps(nextProps) {
     if (nextProps.reOpen && this.props.reOpen !== nextProps.reOpen) {
-      this.setState({ show: true }); // open modal
+      this.setState({ showing: true }); // open modal
     }
   }
   // TODO REMOVE THIS HACK
